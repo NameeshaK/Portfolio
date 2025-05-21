@@ -74,6 +74,7 @@
         .nav-links {
             display: flex;
             gap: 2rem;
+            margin: 0 auto;
         }
 
         .nav-links a {
@@ -89,6 +90,26 @@
             transform: translateY(-3px);
         }
 
+        /* Form logo styling */
+        .form-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-left: 2rem;
+        }
+
+        .form-logo a {
+            color: var(--accent-color);
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+        }
+
+        .form-logo a:hover {
+            color: var(--hover-color);
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.9);
+            transform: translateY(-3px);
+            display: inline-block;
+        }
         section {
             margin: 6rem 0;
             position: relative;
@@ -817,6 +838,9 @@
                     <a href="#projects">Projects</a>
                     <a href="#achievements">Achievements</a>
                     <a href="#contact">Contact</a>
+                </div>
+                <div class="form-logo">
+                <a href="https://forms.gle/uY7chgiYZEKwbwu47" target="_blank" title="Contact Form"><i class="fas fa-paper-plane"></i></a>
                 </div>
             </nav>
         </div>
